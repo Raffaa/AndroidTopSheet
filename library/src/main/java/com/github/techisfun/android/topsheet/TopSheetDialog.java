@@ -139,7 +139,7 @@ public class TopSheetDialog extends AppCompatDialog {
                 themeId = outValue.resourceId;
             } else {
                 // bottomSheetDialogTheme is not provided; we default to our light theme
-                themeId = R.style.Theme_Design_TopSheetDialog;
+                themeId = R.style.Theme_Design_Light_TopSheetDialog;
             }
         }
         return themeId;
