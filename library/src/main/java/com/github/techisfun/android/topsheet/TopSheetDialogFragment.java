@@ -2,6 +2,7 @@ package com.github.techisfun.android.topsheet;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatDialogFragment;
 
 /**
@@ -9,8 +10,8 @@ import android.support.v7.app.AppCompatDialogFragment;
  */
 public class TopSheetDialogFragment extends AppCompatDialogFragment {
 
-    @Override
+    @Override @NonNull
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        return new TopSheetDialog(getContext(), getTheme());
+        return new TopSheetDialog(requireContext(), getTheme());
     }
 }
