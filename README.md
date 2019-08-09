@@ -1,7 +1,9 @@
 TopSheet - a "top" version of BottomSheet
 =========================================
 
-[![Release](https://jitpack.io/v/TechIsFun/AndroidTopSheet.svg)](https://jitpack.io/#TechIsFun/AndroidTopSheet)
+[![](https://jitpack.io/v/xanscale/AndroidTopSheet.svg)](https://jitpack.io/#xanscale/AndroidTopSheet)
+
+This fork bump to AndroidX
 
 TopSheetBehaviour
 -----
