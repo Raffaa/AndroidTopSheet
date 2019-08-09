@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.github.techisfun.android.topsheet.app"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 17
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -21,7 +20,6 @@ android {
 
 dependencies {
     implementation project(":library")
-    testImplementation 'junit:junit:4.12'
-    implementation rootProject.ext.appcompat
-    implementation rootProject.ext.design
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
 }
