@@ -11,7 +11,7 @@
         <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
     </style>
 
-    <style name="Animation.Design.TopSheetDialog" parent="Animation.AppCompat.Dialog">
+    <style name="Animation.Design.TopSheetDialog" parent="Animation.MaterialComponents.BottomSheetDialog">
         <item name="android:windowEnterAnimation">@anim/top_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/top_sheet_slide_out</item>
     </style>
