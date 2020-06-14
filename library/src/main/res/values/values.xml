@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <attr name="appBarLayoutStyle"/>
+    <attr format="reference" name="badgeStyle"/>
+    <attr format="reference" name="bottomAppBarStyle"/>
+    <attr format="reference" name="bottomNavigationStyle"/>
+    <attr format="reference" name="bottomSheetDialogTheme"/></resources>

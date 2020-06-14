@@ -66,7 +66,7 @@ public class TopSheetDialog extends AppCompatDialog {
     }
 
     public TopSheetDialog(@NonNull Context context, @StyleRes int theme) {
-        super(context, getThemeResId(context, theme));
+        super(context, getThemeResId(theme));
         // We hide the title bar for any style configuration. Otherwise, there will be a gap
         // above the bottom sheet when it is expanded.
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -78,17 +78,10 @@ public class TopSheetDialog extends AppCompatDialog {
         mCancelable = cancelable;
     }
 
-    private static int getThemeResId(Context context, int themeId) {
+    private static int getThemeResId(int themeId) {
         if (themeId == 0) {
-            // If the provided theme is 0, then retrieve the dialogTheme from our theme
-            TypedValue outValue = new TypedValue();
-            if (context.getTheme().resolveAttribute(
-                    R.attr.bottomSheetDialogTheme, outValue, true)) {
-                themeId = outValue.resourceId;
-            } else {
-                // bottomSheetDialogTheme is not provided; we default to our light theme
-                themeId = R.style.Theme_MaterialComponents_Light_TopSheetDialog;
-            }
+            // If the provided theme is 0, then we set our lihjt theme (daynight not supported rn)
+            themeId = R.style.Theme_MaterialComponents_Light_TopSheetDialog;
         }
         return themeId;
     }
